@@ -66,7 +66,7 @@
                             @auth
                                 Let us know what you would like and we'll take a look over!
                             @else
-                                Please login to craete an idea.
+                                Please login to create an idea.
                             @endauth
                         </p>
                     </div>
