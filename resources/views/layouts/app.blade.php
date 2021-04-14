@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="icon" type="image/png" href="{{ asset('img/fav-icon.png')}}" />
 
-        <title>Laracasts Voting</title>
+        <title>Voting App | Laravel</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
@@ -19,7 +20,7 @@
     </head>
     <body class="font-sans bg-gray-background text-gray-900 text-sm">
         <header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
-            <a href="{{ route('idea.index') }}"><img src="{{ asset('img/logo.svg')}}" alt=""></a>
+            <a href="{{ route('idea.index') }}"><img style="height: 100px; " src="{{ asset('img/logo.png')}}" alt=""></a>
             <div class="flex items-center mt-2 md:mt-0">
                 @if (Route::has('login'))
                     <div class="px-6 py-4">
